@@ -1,0 +1,18 @@
+{
+  "name": "esummit2021",
+  "version": "1.0.0",
+  "description": "JU E-Summit 2021 Web App",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sk Shahnawaz",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "mongoose": "^5.13.3",
+    "nodemailer": "^6.6.3"
+  }
+}
