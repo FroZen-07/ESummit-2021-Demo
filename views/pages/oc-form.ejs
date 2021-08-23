@@ -1,0 +1,140 @@
+<form class="needs-validation" method="POST" action="/oc-apply-submit" novalidate>
+    <!-- 2 column grid layout with text inputs for the first and last names -->
+    <div class="row mb-4">
+        <div class="col">
+            <div class="form-outline">
+                <input type="text" id="first-name-field" name="firstName" class="form-control" required />
+                <label class="form-label" for="first-name-field">First name</label>
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-outline">
+                <input type="text" id="last-name-field" name="lastName" class="form-control" required />
+                <label class="form-label" for="last-name-field">Last name</label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Email input -->
+    <div class="form-outline mb-4">
+        <input type="email" id="email-field" name="email" class="form-control" required />
+        <label class="form-label" for="email-field">Email</label>
+    </div>
+
+    <!-- Phone input -->
+    <div class="form-inline form-outline input-group mb-4">
+        <span class="input-group-text" id="inputGroupPrepend">+91</span>
+        <input type="tel" id="phone-field" name="phone" class="form-control" aria-describedby="inputGroupPrepend"
+            required />
+        <label class="form-label" for="phone-field">Phone (WhatsApp)</label>
+    </div>
+
+
+    <!-- Department input -->
+    <div class="form-outline mb-4">
+        <input type="text" id="department-field" name="department" class="form-control" required />
+        <label class="form-label" for="department-field">Department</label>
+    </div>
+
+    <!-- Graduation Year input -->
+    <div class="form-outline mb-4">
+        <label class="form-label" for="">Graduation Year </label>
+        <br>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="gradYear" id="inlineRadio1" value="2022" />
+            <label class="form-check-label" for="inlineRadio1">2022</label>
+        </div>
+        <br>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="gradYear" id="inlineRadio2" value="2023" />
+            <label class="form-check-label" for="inlineRadio2">2023</label>
+        </div>
+        <br>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="gradYear" id="inlineRadio2" value="2024" />
+            <label class="form-check-label" for="inlineRadio2">2024</label>
+        </div>
+    </div>
+
+    <div class="form-outline mb-4">
+        <label class="form-label" for="">Which of these Departments are you interested to be a part of ?</label>
+        <!-- Corporate relations checkbox -->
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Corporate Relations"
+                id="department-corporate-relations" name="interestDepartment" />
+            <label class="form-check-label" for="department-corporate-relations">
+                Corporate Relations
+            </label>
+        </div>
+
+        <!-- Designing checkbox -->
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Designing" id="department-designing"
+                name="interestDepartment" />
+            <label class="form-check-label" for="department-designing">
+                Designing
+            </label>
+        </div>
+
+        <!-- Content Writing checkbox -->
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Content Writing" id="department-content-writing"
+                name="interestDepartment" />
+            <label class="form-check-label" for="department-content-writing">
+                Content Writing
+            </label>
+        </div>
+
+        <!-- Technical checkbox -->
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Technical" id="department-technical"
+                name="interestDepartment" />
+            <label class="form-check-label" for="department-technical">
+                Technical
+            </label>
+        </div>
+    </div>
+
+
+    <label class="form-label" for="">What interests you in the domain mentioned above? How do you plan to implement your
+        expertise/keenness towards the cause
+        of E-Summit'21?</label>
+    <div class="form-outline mb-4">
+        <textarea class="form-control" id="interests-textarea" name="interests" rows="5" data-mdb-showcounter="true"
+            maxlength="1000" required></textarea>
+        <label class="form-label" for="interests-textarea">Write your response here</label>
+        <div class="form-helper"></div>
+    </div>
+
+    <!-- Portfolio link input -->
+    <label class="form-label">If you want to showcase your skills, please enter your
+        portfolio link below.
+    </label>
+    <div class="form-outline mb-4">
+        <input type="url" id="portfolio-link-field" name="portfolioLink" class="form-control" />
+
+    </div>
+
+    <!-- Submit button -->
+    <input type="submit" class="btn btn-primary btn-block mb-4"></input>
+
+    <!-- Register buttons -->
+    <!-- <div class="text-center">
+        <p>or sign up with:</p>
+        <button type="button" class="btn btn-primary btn-floating mx-1">
+            <i class="fab fa-facebook-f"></i>
+        </button>
+
+        <button type="button" class="btn btn-primary btn-floating mx-1">
+            <i class="fab fa-google"></i>
+        </button>
+
+        <button type="button" class="btn btn-primary btn-floating mx-1">
+            <i class="fab fa-twitter"></i>
+        </button>
+
+        <button type="button" class="btn btn-primary btn-floating mx-1">
+            <i class="fab fa-github"></i>
+        </button>
+    </div> -->
+</form>

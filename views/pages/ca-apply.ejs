@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head2'); %>
+        <!-- Custom styles for this template -->
+        <link href="/assets/css/navBar.css" rel="stylesheet">
+        <link href="/assets/css/carousel.css" rel="stylesheet">
+        <link href="/assets/css/heroes.css" rel="stylesheet">
+        <link href="/assets/css/features.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-light">
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light" aria-label="Main navigation">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">E-Summit 2021</a>
+            <button class="btn btn-outline-primary btn-sm" type="button" id="register_button"
+                aria-label="Toggle navigation">
+                Pre-Register Now
+                <!-- <span class="navbar-toggler-icon"></span> -->
+            </button>
+        </div>
+    </nav>
+
+    <%- include('../partials/navScroller'); %>
+
+        <%- include('../partials/svgSymbols'); %>
+
+            <main>
+
+                <div class="row flex-lg-row align-items-center g-5 py-5">
+                    <!-- <div class="col-xxl-6">
+                        <img src="/assets/images/ca2.png" class="d-block mx-lg-auto img-fluid" alt="JU E-Summit'21 Logo"
+                            width="auto" loading="lazy">
+                    </div> -->
+                    <div class="col-xxl-12">
+
+                        <% if (isSuccess==1) { %>
+                            <div id="intro" class="text-center text-success">
+                                <img src="/assets/images/tick.gif"></img>
+                                <p></p>
+                                <h1 class="mb-3 h2">Thank You <%= name %>!</h1>
+                                <p class="mb-3 text-dark">Your application has been submitted successfully. Keep
+                                    an eye on your mail.
+                                    We'll get
+                                    back to you soon.</p>
+                            </div>
+                            <% } else if (isSuccess==0) { %>
+                                <div id="intro" class="text-center text-danger">
+                                    <img src="/assets/images/error.gif" style="height: 200px;"></img>
+                                    <p></p>
+                                    <h1 class="h2">Oops!</h1>
+                                    <p class="text-dark">Please fill in all fields correctly as instructed.</p>
+                                </div>
+                                <!-- CA Form starts -->
+                                <%- include('../partials/pageEssentials/ca-full-form'); %>
+                                    <!-- CA Form ends -->
+
+
+                                    <% } else { %>
+                                        <!-- CA Form starts -->
+                                        <%- include('../partials/pageEssentials/ca-full-form'); %>
+                                            <!-- CA Form ends -->
+                                            <% } %>
+
+                    </div>
+                </div>
+
+            </main>
+
+
+            <%- include('../partials/footer2'); %>
+
+                <script src="/assets/js/navBar.js"></script>
+</body>
+
+</html>

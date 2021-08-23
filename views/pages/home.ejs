@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <%- include('../partials/head2'); %>
+  <!-- Custom styles for this template -->
+  <link href="../assets/css/navBar.css" rel="stylesheet">
+  <link href="../assets/css/carousel.css" rel="stylesheet">
+  <link href="../assets/css/heroes.css" rel="stylesheet">
+  <link href="../assets/css/features.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-light">
+
+  <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light" aria-label="Main navigation">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">E-Summit 2021</a>
+      <button class="btn btn-outline-primary btn-sm" type="button" id="register_button" aria-label="Toggle navigation">
+        Pre-Register Now
+        <!-- <span class="navbar-toggler-icon"></span> -->
+      </button>
+      <!-- <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+
+      <!-- <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Notifications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Switch account</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown"
+                            aria-expanded="false">Settings</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div> -->
+    </div>
+  </nav>
+
+  <!-- <div class="nav-scroller bg-body shadow-sm">
+        <nav class="nav nav-underline" aria-label="Secondary navigation">
+            <a class="nav-link active" aria-current="page" href="/">Explore</a>
+            <a class="nav-link" href="/legacy">Legacy</a>
+            <a class="nav-link" href="/events">
+                Events
+                <span class="badge bg-light text-dark rounded-pill align-text-bottom">5</span>
+            </a>
+            <a class="nav-link" href="/schedule">Schedule</a>
+            <a class="nav-link" href="/sponsors">Sponsors</a>
+            <a class="nav-link" href="latest">Latest</a>
+            <a class="nav-link" href="/ca">Campus Ambassador Program</a>
+            <a class="nav-link" href="/contact">Contact</a>
+        </nav>
+    </div> -->
+
+  <%- include('../partials/navScroller'); %>
+
+
+  <%- include('../partials/svgSymbols'); %>
+
+
+
+  <main>
+    <!-- Carousel starts -->
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <rect width="100%" height="100%" fill="#777" />
+          </svg>
+          <!-- <img src="https://res.cloudinary.com/ju-ecell/image/upload/v1629564584/LaunchX/Carousel/LAUNCHX_INTRO_bybsuu.png" height="100%"> -->
+
+          <!-- <div class="container">
+            <div class="carousel-caption text-start">
+              <h1 class="text-primary">Example headline.</h1>
+              <p>Some representative placeholder content for the first slide of the carousel.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+            </div>
+          </div> -->
+        </div>
+        <div class="carousel-item">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <rect width="100%" height="100%" fill="#777" />
+          </svg>
+
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Another example headline.</h1>
+              <p>Some representative placeholder content for the second slide of the carousel.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <rect width="100%" height="100%" fill="#777" />
+          </svg>
+
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>One more for good measure.</h1>
+              <p>Some representative placeholder content for the third slide of this carousel.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Carousel ends -->
+
+    <!-- First hero starts -->
+
+    <div class="container col-xxl-12 px-4 py-2">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img src="../assets/images/blue_grad_logo.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-2 fw-bold lh-1 mb-3">And the <span class="text-primary">legacy</span>
+            continues...</h1>
+          <p class="lead">Jadavpur University Entrepreneurship Cell presents to you Jadavpur
+            University
+            Entrepreneurship Summit 2021. This marks
+            Jadavpur University's arrival in the league of institutions promoting and nurturing
+            entrepreneurship among the youth. We
+            wish to ignite the passion of Entrepreneurship in the minds of the students, as well as
+            reward
+            the entrepreneurial zest.</p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Pre-Register</button>
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4">View
+              Schedule</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- First hero ends -->
+
+    <!-- Event stats start -->
+    <div class="container px-4 py-4" id="icon-grid">
+      <!-- <h2 class="pb-2 border-bottom">Inspired by Innovation. Loved by people.</h2> -->
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+        <div class="col d-flex align-items-start">
+          <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
+            <use xlink:href="#bootstrap" />
+          </svg>
+          <div>
+            <h4 class="fw-bold mb-0"><span class="text-info">15000+</span> Attendees</h4>
+            <p>Witnessed on average in the previous version of E-Summit at Jadavpur University.</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
+            <use xlink:href="#cpu-fill" />
+          </svg>
+          <div>
+            <h4 class="fw-bold mb-0"><span class="text-primary">100+</span> Startups</h4>
+            <p>Witnessed on average in the previous version of E-Summit at Jadavpur University.</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
+            <use xlink:href="#calendar3" />
+          </svg>
+          <div>
+            <h4 class="fw-bold mb-0"><span class="text-success">25000+</span> Footfall</h4>
+            <p>Witnessed on average in the previous version of E-Summit at Jadavpur University.</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
+            <use xlink:href="#home" />
+          </svg>
+          <div>
+            <h4 class="fw-bold mb-0"><span class="text-danger">1,00,000+</span> Clicks</h4>
+            <p>Witnessed on average in the previous version of E-Summit at Jadavpur University.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- Event stats end -->
+
+    <!-- Event cards start -->
+
+    <div class="container px-4 py-4" id="custom-cards">
+      <!-- <h2 class="pb-2 border-bottom">Custom cards</h2> -->
+      <h1 class="display-4 fw-bold text-center">Push your <span class="text-danger">limits</span>.</h1>
+
+
+      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('../assets/images/unsplash-photo-1.jpg');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Catchy line about the First Event
+              </h2>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#geo-fill" />
+                  </svg>
+                  <small>Online</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#calendar3" />
+                  </svg>
+                  <small>3d</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('../assets/images/unsplash-photo-2.jpg');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Catchy line about the Second Event
+              </h2>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#geo-fill" />
+                  </svg>
+                  <small>Online</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#calendar3" />
+                  </svg>
+                  <small>4d</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('../assets/images/unsplash-photo-3.jpg');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Catchy line about the Third Event
+              </h2>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#geo-fill" />
+                  </svg>
+                  <small>Online</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#calendar3" />
+                  </svg>
+                  <small>5d</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h4 class="display-6 fw-light text-center"><span class="text-primary">We always have
+          something for you</span>.</h4>
+      <h6 class="display-8 fw-light text-center"><span class="text-success">More events to unfold
+          soon</span>.
+      </h6>
+    </div>
+    <!-- Event cards end -->
+
+    <!-- Hanging icons starts -->
+    <div class="container px-4 py-5" id="hanging-icons">
+      <h2 class="pb-2 border-bottom">Ignite your potential.</h2>
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="col d-flex align-items-start">
+          <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+            <svg class="bi" width="1em" height="1em">
+              <use xlink:href="#toggles2" />
+            </svg>
+            <i class="fa-regular fa-chalkboard-user"></i>
+          </div>
+          <div>
+            <h2>Learn</h2>
+            <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with
+              another
+              sentence
+              and probably just keep going until we run out of words.</p>
+            <a href="#" class="btn btn-primary">
+              Explore Webinars
+            </a>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+            <svg class="bi" width="1em" height="1em">
+              <use xlink:href="#cpu-fill" />
+            </svg>
+          </div>
+          <div>
+            <h2>Enjoy</h2>
+            <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with
+              another
+              sentence
+              and probably just keep going until we run out of words.</p>
+            <a href="#" class="btn btn-primary">
+              Discover fun
+            </a>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+            <svg class="bi" width="1em" height="1em">
+              <use xlink:href="#tools" />
+            </svg>
+          </div>
+          <div>
+            <h2>Network</h2>
+            <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with
+              another
+              sentence
+              and probably just keep going until we run out of words.</p>
+            <a href="#" class="btn btn-primary">
+              View More
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Hanging icons ends -->
+
+    <!-- Sponsor Us starts -->
+    <div class="container col-xl-12 col-xxl-12 px-4 py-3">
+      <div class="row align-items-center g-lg-5 py-5">
+        <div class="col-lg-7 text-center text-lg-start">
+          <h1 class="display-4 fw-bold lh-1 mb-3">Interested in sponsoring us?</h1>
+          <p class="col-lg-10 fs-4">Here is a form. Please fill this up with your offer and we will
+            get
+            back
+            to you in 24 hours. We'll be more than happy to welcome you on board. We appreciate your
+            kind
+            gesture ! </p>
+        </div>
+        <div class="col-md-10 mx-auto col-lg-5">
+          <form class="p-4 p-md-5 border rounded-3 bg-light">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="floatingInput" placeholder="Andy John">
+              <label for="floatingInput">Name</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="floatingInput" placeholder="Example Company Inc.">
+              <label for="floatingInput">Organisation</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Email address</label>
+            </div>
+
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Submit</button>
+            <hr class="my-4">
+            <small class="text-muted">By clicking Submit, you agree to the terms of use. Someone
+              from
+              our
+              team will get in touch within 24 hours.</small>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Sponsor us ends -->
+
+  </main>
+
+
+  <%- include('../partials/footer2'); %>
+
+  <script src="../assets/js/navBar.js"></script>
+</body>
+
+</html>

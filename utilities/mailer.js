@@ -1,6 +1,6 @@
 const nodemailer = require("nodemailer");
 
-async function sendMail(content, recipientEmail, isHTML) {
+async function sendMail(content, recipientEmail, mailSubject, isHTML) {
   // create reusable transporter object using the default SMTP transport
   let transporter = nodemailer.createTransport({
     host: "triumph.herosite.pro",
@@ -8,7 +8,7 @@ async function sendMail(content, recipientEmail, isHTML) {
     secure: true, // true for 465, false for other ports
     auth: {
       user: "esummit@juecell.in", // generated ethereal user
-      pass: "JUecell@2021$123", // generated ethereal password
+      pass: "JUecell@123", // generated ethereal password
     },
   });
 
@@ -17,7 +17,7 @@ async function sendMail(content, recipientEmail, isHTML) {
     let info = await transporter.sendMail({
       from: '"JU E-Summit" <esummit@juecell.in>', // sender address
       to: recipientEmail, // list of receivers
-      subject: "OC Member Application", // Subject line
+      subject: mailSubject, // Subject line
       text: content, // plain text body
       // html: "<b>Hello world?</b>", // html body
     });
@@ -28,7 +28,7 @@ async function sendMail(content, recipientEmail, isHTML) {
     let info = await transporter.sendMail({
       from: '"JU E-Summit" <esummit@juecell.in>', // sender address
       to: recipientEmail, // list of receivers
-      subject: "OC Member Application", // Subject line
+      subject: mailSubject, // Subject line
       //   text: content, // plain text body
       html: content, // html body
     });

@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <%- include('../partials/head2'); %>
+  <!-- Custom styles for this template -->
+  <link href="../assets/css/navBar.css" rel="stylesheet">
+  <link href="../assets/css/carousel.css" rel="stylesheet">
+  <link href="../assets/css/heroes.css" rel="stylesheet">
+  <link href="../assets/css/features.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-light">
+
+  <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light" aria-label="Main navigation">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">E-Summit 2021</a>
+      <button class="btn btn-outline-primary btn-sm" type="button" id="register_button" aria-label="Toggle navigation">
+        Pre-Register Now
+        <!-- <span class="navbar-toggler-icon"></span> -->
+      </button>
+      <!-- <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+
+      <!-- <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Notifications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Switch account</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown"
+                            aria-expanded="false">Settings</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div> -->
+    </div>
+  </nav>
+
+  <%- include('../partials/navScroller'); %>
+
+
+  <%- include('../partials/svgSymbols'); %>
+
+
+
+  <main>
+
+
+    <!-- First hero starts -->
+
+    <div class="px-4 py-5 my-5 text-center">
+      <!-- <img class="d-block mx-auto mb-4" src="../assets/images/blue_grad_logo.png" alt="" height="57"> -->
+      <!-- <div class="py-5"></div> -->
+      <h1 class="display-5 fw-bold">Find your <span class="text-decoration-line-through">event</span>
+        interests.
+      </h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap,
+          the
+          world’s most
+          popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid
+          system,
+          extensive prebuilt components, and powerful JavaScript plugins.</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Pre-Register Now</button>
+          <button type="button" class="btn btn-outline-secondary btn-lg px-4">Explore</button>
+        </div>
+      </div>
+    </div>
+    <!-- First hero ends -->
+
+
+    <!-- Event cards start -->
+
+    <div class="container px-4 py-4" id="custom-cards">
+      <!-- <h2 class="pb-2 border-bottom">Custom cards</h2> -->
+      <h1 class="display-4 fw-bold text-center">Push your <span class="text-danger">limits</span>.</h1>
+
+
+      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        <div class="col">
+          <a href="/launchx" style="text-decoration: none;">
+            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-color: #a4508b;
+            background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">LaunchX: Launchpad for innovators
+                </h2>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    
+                  </li>
+                  <li class="d-flex align-items-center me-3">
+                    <svg class="bi me-2" width="1em" height="1em">
+                      <use xlink:href="#geo-fill" />
+                    </svg>
+                    <small>Online</small>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em">
+                      <use xlink:href="#calendar3" />
+                    </svg>
+                    <small>4th - 26th Sep, 2021</small>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col">
+          <a href="/inspiratalks" style="text-decoration: none;">
+          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-color: #2a2a72;
+          background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">InspiraTalks: Begin the conversation
+              </h2>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#geo-fill" />
+                  </svg>
+                  <small>Online</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#calendar3" />
+                  </svg>
+                  <small>5th - 19th Sep, 2021</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <div class="col">
+          <a href="/analyst" style="text-decoration: none;">
+          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-color: #36096d;
+          background-image: linear-gradient(315deg, #36096d 0%, #37d5d6 74%);">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Analyst: Think Analyse and Solve
+              </h2>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#geo-fill" />
+                  </svg>
+                  <small>Online</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#calendar3" />
+                  </svg>
+                  <small>24th Aug - 26th Sep, 2021</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </a>
+      </div>
+
+      
+
+      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        <div class="col">
+          <a href="/hacknpitch" style="text-decoration: none;">
+          
+          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-color: #045de9;
+          background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">HackNPitch: Hack the problem and pitch the solution
+              </h2>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#geo-fill" />
+                  </svg>
+                  <small>Online</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#calendar3" />
+                  </svg>
+                  <small>25 Aug - 12 Sep, 2021</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-color: #1fd1f9;
+          background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
+          ">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Mock Stock: A game of skill, strategy and survival
+              </h2>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#geo-fill" />
+                  </svg>
+                  <small>Online</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#calendar3" />
+                  </svg>
+                  <small>6th Sep - 24th Sep, 2021</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <a href="/mockauction" style="text-decoration: none;">
+          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-color: #42378f;
+          background-image: linear-gradient(315deg, #42378f 0%, #f53844 74%);">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Mock IPL Auction: <br>
+                Get Set Bid <br>
+                Make your team now
+              </h2>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#geo-fill" />
+                  </svg>
+                  <small>Online</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#calendar3" />
+                  </svg>
+                  <small>8 Sep - 11 Sep, 2021</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <div class="col">
+          <a href="/managerhustle" style="text-decoration: none;">
+          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-color: #6e72fc;
+          background-image: linear-gradient(315deg, #6e72fc 0%, #ad1deb 74%);">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+              <h2 class="pt-5 mt-5 mb-4 display-8 lh-1 fw-bold">Manager Hustle: Open your lid 'nd start to bid!
+              </h2>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#geo-fill" />
+                  </svg>
+                  <small>Online</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#calendar3" />
+                  </svg>
+                  <small>24th Aug - 25th Sep</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </a>
+      </div>
+
+      
+      
+
+      <h4 class="display-6 fw-light text-center"><span class="text-primary">We always have
+          something for you</span>.</h4>
+      <h6 class="display-8 fw-light text-center"><span class="text-success">More events to unfold
+          soon</span>.
+      </h6>
+    </div>
+    <!-- Event cards end -->
+
+
+
+    <!-- Sponsor Us starts -->
+    <div class="container col-xl-12 col-xxl-12 px-4 py-3">
+      <div class="row align-items-center g-lg-5 py-5">
+        <div class="col-lg-7 text-center text-lg-start">
+          <h1 class="display-4 fw-bold lh-1 mb-3">Interested in sponsoring us?</h1>
+          <p class="col-lg-10 fs-4">Here is a form. Please fill this up with your offer and we will
+            get
+            back
+            to you in 24 hours. We'll be more than happy to welcome you on board. We appreciate your
+            kind
+            gesture ! </p>
+        </div>
+        <div class="col-md-10 mx-auto col-lg-5">
+          <form class="p-4 p-md-5 border rounded-3 bg-light">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="floatingInput" placeholder="Andy John">
+              <label for="floatingInput">Name</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="floatingInput" placeholder="Example Company Inc.">
+              <label for="floatingInput">Organisation</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Email address</label>
+            </div>
+
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Submit</button>
+            <hr class="my-4">
+            <small class="text-muted">By clicking Submit, you agree to the terms of use. Someone
+              from
+              our
+              team will get in touch within 24 hours.</small>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Sponsor us ends -->
+
+  </main>
+
+
+  <%- include('../partials/footer2'); %>
+
+  <script src="../assets/js/navBar.js"></script>
+</body>
+
+</html>

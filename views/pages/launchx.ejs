@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <%- include('../partials/head2'); %>
+  <!-- Custom styles for this template -->
+  <link href="../assets/css/navBar.css" rel="stylesheet">
+  <link href="../assets/css/carousel.css" rel="stylesheet">
+  <link href="../assets/css/heroes.css" rel="stylesheet">
+  <link href="../assets/css/features.css" rel="stylesheet">
+  <link href="../assets/css/timeline-launchx.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-light">
+
+  <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light" aria-label="Main navigation">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">E-Summit 2021</a>
+      <button class="btn btn-outline-primary btn-sm" type="button" id="register_button" aria-label="Toggle navigation">
+        Pre-Register Now
+        <!-- <span class="navbar-toggler-icon"></span> -->
+      </button>
+      <!-- <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+
+      <!-- <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Notifications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Switch account</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown"
+                            aria-expanded="false">Settings</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div> -->
+    </div>
+  </nav>
+
+  <!-- <div class="nav-scroller bg-body shadow-sm">
+        <nav class="nav nav-underline" aria-label="Secondary navigation">
+            <a class="nav-link active" aria-current="page" href="/">Explore</a>
+            <a class="nav-link" href="/legacy">Legacy</a>
+            <a class="nav-link" href="/events">
+                Events
+                <span class="badge bg-light text-dark rounded-pill align-text-bottom">5</span>
+            </a>
+            <a class="nav-link" href="/schedule">Schedule</a>
+            <a class="nav-link" href="/sponsors">Sponsors</a>
+            <a class="nav-link" href="latest">Latest</a>
+            <a class="nav-link" href="/ca">Campus Ambassador Program</a>
+            <a class="nav-link" href="/contact">Contact</a>
+        </nav>
+    </div> -->
+
+  <%- include('../partials/navScroller'); %>
+
+
+  <%- include('../partials/svgSymbols'); %>
+
+
+
+  <main>
+    <!-- Carousel starts -->
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <!-- <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button> -->
+        <!-- <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <rect width="100%" height="100%" fill="#777" />
+          </svg> -->
+          <img src="https://res.cloudinary.com/ju-ecell/image/upload/v1629564584/LaunchX/Carousel/LAUNCHX_INTRO_bybsuu.png" height="100%">
+
+          <!-- <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>Example headline.</h1>
+              <p>Some representative placeholder content for the first slide of the carousel.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+            </div>
+          </div> -->
+        </div>
+        <!-- <div class="carousel-item">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <rect width="100%" height="100%" fill="#777" />
+          </svg>
+
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Another example headline.</h1>
+              <p>Some representative placeholder content for the second slide of the carousel.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+            </div>
+          </div>
+        </div> -->
+        <!-- <div class="carousel-item">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <rect width="100%" height="100%" fill="#777" />
+          </svg>
+
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>One more for good measure.</h1>
+              <p>Some representative placeholder content for the third slide of this carousel.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+            </div>
+          </div>
+        </div> -->
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Carousel ends -->
+
+    <!-- First hero starts -->
+
+    <div class="container col-xxl-12 px-4 py-2">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img src="../assets/images/LaunchX_Promotional_logo.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-2 fw-bold lh-1 mb-3">Launchpad for <span class="text-primary">Innovators.</span>
+          </h1>
+          <p class="lead">LaunchX is a pan-India ideathon event that aims to bring in not only eminent startups from across the nation but also revered mentors. The month-long event starting with idea submission, workshops on practical approach to entrepreneurships, prototype and business plan to final pitching in front of an esteemed panel of investors, throws a spotlight on some of the most promising startups in the country.</p>
+
+          <!-- <p class="lead">LaunchX opens up a vista of opportunities for young minds to ideate, launch and accelerate their startups. The startup pitching competition provides fundraising opportunities and serves to make young and budding entrepreneurs aware of the tremendous pool of market opportunities and resources available. If you are an early-stage startup looking to find its feet in the ideation phase or you nurture the desire to revolutionize the existing system, this platform is made just for you!</p> -->
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Register Now</button>
+            <!-- <button type="button" class="btn btn-outline-secondary btn-lg px-4">View
+              Schedule</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- First hero ends -->
+
+    <!-- Second hero starts -->
+
+    <div class="px-4 pt-5 my-5 text-center">
+      <h1 class="display-4 fw-bold">We bring you <span class="text-danger">The Best.</span></h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">LaunchX opens up a vista of opportunities for young minds to ideate, launch and accelerate their startups. The startup pitching competition provides fundraising opportunities and serves to make young and budding entrepreneurs aware of the tremendous pool of market opportunities and resources available. If you are an early-stage startup looking to find its feet in the ideation phase or you nurture the desire to revolutionize the existing system, this platform is made just for you!</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+          <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Register Now</button>
+          <!-- <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button> -->
+        </div>
+      </div>
+      <div class="overflow-hidden" style="max-height: 40vh;">
+        <div class="container px-5">
+          <img src="../assets/images/launchx-vector1.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="800" height="500" loading="lazy">
+        </div>
+      </div>
+    </div>
+
+    <!-- Second hero ends -->
+
+    <!-- Rewards start -->
+    <div class="container px-4 py-4" id="icon-grid">
+      <h1 class="display-4 fw-bold text-center"><span class="text-success">Exciting Rewards</span> for <span class="text-danger">You</span>.</h1>
+      <!-- <h2 class="pb-2 border-bottom">Inspired by Innovation. Loved by people.</h2> -->
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-2 g-4 py-5">
+        <div class="col d-flex align-items-start">
+          <div class="icon-square bg-light text-muted flex-shrink-0 me-3">
+            <svg class="bi" width="1em" height="1em">
+              <use xlink:href="#toggles2" />
+            </svg>
+            
+          </div>
+          <div>
+            <h2 class="fw-bold mb-0">Exciting <span class="text-danger">Cash Prizes upto Rs. 10,000</span></h2>
+            <!-- <p>Get recognized, E-Summit '21 brings exciting cash prizes upto Rs. 10,000 for the winners. So gear up and put your best game face on! -->
+            </p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
+            <use xlink:href="#cpu-fill" />
+          </svg>
+          <div>
+            <h2 class="fw-bold mb-0">Accelerator Programme by <span class="text-primary">Indian Accelerator <span class="text-dark">and</span> Buzzmentrr </h2>
+            <!-- <p>The students of this generation demand the learning support that is appropriate for their situation and context. JU E-Cell brings you various courses worth up to 10k to help you enhance those skills you have always wanted to master. So don't let this opportunity slide!</p> -->
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <div class="icon-square bg-light text-muted flex-shrink-0 me-3">
+            <svg class="bi" width="1em" height="1em">
+              <use xlink:href="#tools" />
+            </svg>
+          </div>
+          <div>
+            <h2 class="fw-bold mb-0">One on One Mentorship Sessions by <span class="text-primary">NIY</h2>
+            <!-- <p>The students of this generation demand the learning support that is appropriate for their situation and context. JU E-Cell brings you various courses worth up to 10k to help you enhance those skills you have always wanted to master. So don't let this opportunity slide!</p> -->
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
+            <use xlink:href="#calendar3" />
+          </svg>
+          <div>
+            <h2 class="fw-bold mb-0">Chance to pitch in front of investors and raise <span class="text-success">Seed Fund</span></h2>
+            <!-- <p>Observe a development in professional and communication skills, and most importantly, boost your confidence. E-Summit '21 will help you to grab that ideal internship that lands you the career of your dreams.</p> -->
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- Rewards end -->
+
+    <!-- Timeline section starts -->
+
+    <!-- <div class="container"> -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="card">
+            <div class="card-body">
+              <h1 class="card-title mb-5 text-center">Timeline</h1>
+
+              <div class="hori-timeline" dir="ltr">
+                <ul class="list-inline events">
+                  <li class="list-inline-item event-list">
+                    <div class="px-4">
+                      <div class="event-date bg-soft-primary text-primary">23-30 Aug</div>
+                      <h5 class="font-size-16">Registration</h5>
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Applications start</h5>
+                          <p class="text-muted">Registration Portal is live now ! Head over to the portal, signup/login to your E-Summit Account and reserve your seat.</p>
+                          <a href="#" class="btn btn-primary">Register Now</a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-inline-item event-list">
+                    <div class="px-4">
+                      <div class="event-date bg-soft-success text-success">4-11 Sep</div>
+                      <h5 class="font-size-16">Ideation Week</h5>
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Curtain Raiser</h5>
+                          <h5 class="card-title">Speaker Ideation</h5>
+                          <h5 class="card-title">Abstract Submission and Validation</h5>
+                          <p class="text-muted">Submit an abstract paper (of not more than 300 words) containing a brief introduction, description of the problem, the methodology applied and the practical applications. </p>
+                          <h5 class="card-title">Workshop by NIY</h5>
+                          <p class="text-muted">Workshop by NIY on Practical Approach to Entrepreneurship from <span class="text-primary">6th September, 2021 to 10th September, 2021</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-inline-item event-list">
+                    <div class="px-4">
+                      <div class="event-date bg-soft-danger text-danger">11-18 Sep</div>
+                      <h5 class="font-size-16">Prototype Week</h5>
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Business Model/Prototype development</h5>
+                          <p class="text-muted">Participants will be needed to submit a business model/prototype of their ideas describing how they are planning to launch their idea into the market and convert it into a reality.</p>
+                          <h5 class="card-title">One-on-one mentorship sessions</h5>
+                          <p class="text-muted">Alumni from recognised organisations to provide one on one mentorship</p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-inline-item event-list">
+                    <div class="px-4">
+                      <div class="event-date bg-soft-primary text-primary">19-22 Sep</div>
+                      <h5 class="font-size-16">Mock Pitch</h5>
+                      <div class="card">
+                        <div class="card-body">
+                          <p class="text-muted">Participants get a chance for mock pitching before the final pitch day</p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-inline-item event-list">
+                    <div class="px-4">
+                      <div class="event-date bg-soft-success text-success">26 Sep</div>
+                      <h5 class="font-size-16">Pitchers</h5>
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Prelims</h5>
+                          <p class="text-muted">Teams will be divided into pools.They would pitch in front of a jury panel.</p>
+                          <h5 class="card-title">Final Round</h5>
+                          <p class="text-muted">Top teams from each pool would pitch before the entire panel of judges.</p>
+                          <h5 class="card-title">Felicitation</h5>
+                          <p class="text-muted">Winners will be declared within a week and certificates and prizes will be delivered to winners</p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- end card -->
+        </div>
+      </div>
+      <!-- </div> -->
+
+
+
+
+      <!-- Timeline section ends -->
+
+      <!-- Hanging icons starts -->
+      <div class="container px-4 py-5" id="hanging-icons">
+        <h1 class="display-4 fw-bold text-center">Awaken the entrepreneur in <span class="text-danger">You</span>.</h1>
+        <!-- <h2 class="pb-2"></h2> -->
+        <h4 class="pb-2 text-primary border-bottom text-center">Problem statements for LaunchX</h4>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-4">
+          <div class="col d-flex align-items-start">
+            <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+              <svg class="bi" width="1em" height="1em">
+                <use xlink:href="#toggles2" />
+              </svg>
+              <i class="fa-regular fa-chalkboard-user"></i>
+            </div>
+            <div>
+              <h2>Unemployment</h2>
+              <p>The final solution of unemployment is work. Your challenge is to find that work and be the job giver, not the job seeker.</p>
+
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+              <svg class="bi" width="1em" height="1em">
+                <use xlink:href="#cpu-fill" />
+              </svg>
+            </div>
+            <div>
+              <h2>Clean Tech</h2>
+              <p>The nation that leads the clean technology economy will be the one to lead the global economy. Can you be the catalyst to pave the way to clean tech progress?</p>
+              <!-- <a href="#" class="btn btn-primary">
+              Discover fun
+            </a> -->
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+              <svg class="bi" width="1em" height="1em">
+                <use xlink:href="#tools" />
+              </svg>
+            </div>
+            <div>
+              <h2>Healthcare</h2>
+              <p>The greatest wealth is health. Revolutionise the healthcare system, and make it economical, accessible amd sustainable.</p>
+
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+              <svg class="bi" width="1em" height="1em">
+                
+                  <use xlink:href="#calendar3" />
+                
+              </svg>
+            </div>
+            <div>
+              <h2>General</h2>
+              <p>The idea can be from any field. Ensure that the model should be unique and create a huge impact in the society.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Hanging icons ends -->
+
+      <!-- Judges panel starts -->
+      <div class="container px-4 py-5">
+        <h1 class="display-4 fw-bold text-center">Jury <span class="text-primary">Panel</span>.</h1>
+        <p class="lead mb-4 text-center">To be unveiled soon.</p>
+      </div>
+      <!-- Judges panel ends -->
+
+      <!-- FAQ starts -->
+      <div class="container col-xl-12 col-xxl-12 px-4 py-3">
+        <div class="row align-items-center g-lg-5 py-5">
+          <div class="col-lg-7 text-center text-lg-start">
+            <h1 class="display-4 fw-bold lh-1 mb-3">FAQs</h1>
+            <p class="col-lg-10 fs-4">Here are some frequently asked questions. Nonetheless, LaunchX will be a once in a lifetime experience! </p>
+          </div>
+          <div class="col-md-10 mx-auto col-lg-5">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    What are the minimum and maximum members of a team?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    3-5 members per team
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Can groups be formed across colleges?
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Yes , cross-college groups can be formed.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    What is the registration fee for the event?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Teams consisting of only Jadavpur University students don’t have to pay any amount. Cross-college and other college teams will have to pay Rs 100 per team.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Can you change your teammates between the sub-events?
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    No. Changing teammates will lead to disqualification of the respective team.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- FAQ ends -->
+
+
+
+
+      <div class="container col-xl-12 col-xxl-12 px-4 py-3">
+        <h2 class="pb-2 text-primary border-bottom text-center">Captains</h2>
+        <!-- <h1 class="display-4 fw-bold text-center">Awaken the entrepreneur in <span class="text-danger">You</span>.</h1> -->
+        <div class="row mt-5 g-3 align-items-center">
+          <div class="col-sm-4">
+            <div class="card text-center">
+              <div class="card-body">
+                <div class="row align-items-center">
+                  <div class="col">
+                    <img class="rounded-circle py-1 px-1" src="https://res.cloudinary.com/ju-ecell/image/upload/v1629560705/LaunchX/POC/IMG-20210819-WA0111_ykk70r.jpg" width="140" height="140">
+                  </div>
+                  <div class="col">
+                    <h5 class="card-title">Samriddhi Ganguly</h5>
+                    <p class="card-text">Phone : 9330062297</p>
+                    <a href="https://api.whatsapp.com/send?phone=919330062297&text=Hi%20there%20!%20I%20have%20a%20query%20regarding%20LaunchX%20at%20E-Summit%20JU" class="btn btn-success"><i class="bi bi-whatsapp"></i> Ping me</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card text-center">
+              <div class="card-body">
+                <div class="row align-items-center">
+                  <div class="col">
+                    <img class="rounded-circle py-1 px-1" src="https://res.cloudinary.com/ju-ecell/image/upload/v1629560643/LaunchX/POC/IMG-20210819-WA0110_ldswyo.jpg" width="140" height="140">
+                  </div>
+                  <div class="col">
+                    <h5 class="card-title">Barnika Bhandari</h5>
+                    <p class="card-text">Phone : 8879104935</p>
+                    <a href="https://api.whatsapp.com/send?phone=918879104935&text=Hi%20there%20!%20I%20have%20a%20query%20regarding%20LaunchX%20at%20E-Summit%20JU" class="btn btn-success"><i class="bi bi-whatsapp"></i> Ping me</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 text-center text-lg-start">
+            <!-- <h1 class="display-8 fw-light lh-1 mb-3">Captains</h1> -->
+            <small class="col-lg-10 fs-4">For any queries regarding LaunchX, feel free to contact us. Also, you can drop a mail to <span class="text-primary">launchx</span><span class="text-danger">@</span><span class="text-primary">juecell.in</span> . We'd be elated to assist you! </small>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Past Sponsors starts -->
+
+      <div class="album py-5 bg-light">
+        <div class="container text-center">
+          <h1 class="fw-light border-bottom mb-5 py-3">Past Sponsors</h1>
+          <div class="row g-3 row-cols-1 row-cols-sm-3 row-cols-md-4">
+            <div class="col">
+              <img src="https://res.cloudinary.com/ju-ecell/image/upload/v1629543582/LaunchX/Past%20Sponsors/download_2_a0njlv.png" width="90%" height="225">
+            </div>
+            <div class="col">
+              <img src="https://res.cloudinary.com/ju-ecell/image/upload/v1629543513/LaunchX/Past%20Sponsors/download_1_ivdarw.png" width="90%" height="225">
+            </div>
+            <div class="col">
+              <img src="https://res.cloudinary.com/ju-ecell/image/upload/v1629543450/LaunchX/Past%20Sponsors/nass_kpqkqv.png" width="90%" height="225">
+            </div>
+            <div class="col">
+              <img src="https://res.cloudinary.com/ju-ecell/image/upload/v1629543450/LaunchX/Past%20Sponsors/fs_qnrudx.png" width="90%" height="225">
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Past Sponsors ends -->
+
+  </main>
+
+
+  <%- include('../partials/footer2'); %>
+
+  <script src="../assets/js/navBar.js"></script>
+</body>
+
+</html>

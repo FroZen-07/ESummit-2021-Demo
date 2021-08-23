@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head'); %>
+</head>
+
+<body class="container">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NTJ8BSG" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <header>
+
+        <!-- Jumbotron -->
+
+        <% if (isSuccess==1) { %>
+            <div id="intro" class="p-5 text-center text-success">
+                <img src="../assets/images/tick.gif"></img>
+                <h1 class="mb-3 h2">Thank You <%= firstName %>!</h1>
+                <p class="mb-3 text-dark">Your application has been submitted successfully. Keep
+                    an eye on your mail.
+                    We'll get
+                    back to you soon.</p>
+            </div>
+            <% } else if (isSuccess==0) { %>
+                <div id="intro" class="p-5 text-center text-danger">
+                    <img src="../assets/images/error.gif" style="height: 200px;"></img>
+                    <h1 class="mb-3 h2">Oops!</h1>
+                    <p class="mb-3 text-dark">Please fill in all fields correctly as instructed.</p>
+                </div>
+                <% } else { %>
+                    <div id="intro" class="p-5 text-center bg-light">
+                        <img class="mb-4" src="../assets/images/blue_grad_logo.png"
+                            style="object-fit: cover; max-width: 250px;">
+                        <br>
+
+                        <p class="mb-3">The flagship annual entrepreneurial event compendium of Jadavpur
+                            University is here!
+                        </p>
+                    </div>
+                    <% } %>
+
+
+                        <!-- <a class="btn btn-primary m-2" href="https://www.youtube.com/watch?v=c9B4TPnak1A" role="button"
+                rel="nofollow" target="_blank">Start tutorial</a> -->
+                        <!-- <a class="btn btn-primary m-2" href="https://mdbootstrap.com/docs/standard/" target="_blank"
+                role="button">Download
+                MDB UI KIT</a> -->
+
+                        <!-- Jumbotron -->
+    </header>
+
+    <% if (isSuccess < 0) { %>
+        <!--Main layout-->
+        <main class="my-5">
+            <div class="container">
+                <!--Section: Content-->
+                <section class="">
+                    <h1 class="mb-3 h2 text-dark text-center">OC Applications 2021</h1>
+                    <p class="mb-3 note note-warning">That was an overwhelming response ! Thank You ! And regrets, we
+                        are no longer accepting applications. Please try again next year</p>
+                    <br>
+
+
+                </section>
+            </div>
+        </main>
+
+        <% } %>
+
+
+            <footer>
+                <%- include('../partials/footer'); %>
+            </footer>
+
+            <script>
+                (() => {
+                    'use strict';
+
+                    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                    const forms = document.querySelectorAll('.needs-validation');
+
+                    // Loop over them and prevent submission
+                    Array.prototype.slice.call(forms).forEach((form) => {
+                        form.addEventListener('submit', (event) => {
+                            if (!form.checkValidity()) {
+                                event.preventDefault();
+                                event.stopPropagation();
+                            }
+                            form.classList.add('was-validated');
+                        }, false);
+                    });
+                })();
+            </script>
+
+</body>
+
+</html>
